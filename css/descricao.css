@@ -1,0 +1,46 @@
+.container-descricao{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 80px;
+  padding: 60px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card > h2{
+  font: 600 1.5rem/1.0 "Arial";
+}
+
+.card > p{
+  text-align: center;
+  font: bold 0.800rem/1.3 "Arial";
+  max-width: 40ch;
+}
+
+.imagens{
+  display: flex;
+  overflow-x: scroll;
+}
+
+.imagens > img{
+  flex: 1;
+}
+
+.descricao-imagens{
+  display: flex;
+  gap: 160px;
+  overflow-x: scroll;
+}
+
+.descricao-imagens > p{
+  padding: 20px;
+  font: bold 1.3rem/1.3 "Arial";
+  text-align: center;
+}
+

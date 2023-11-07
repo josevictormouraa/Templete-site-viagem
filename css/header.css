@@ -1,0 +1,73 @@
+.header{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ padding: 40px;
+}
+
+.header .logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lista-itens{
+  display: flex;
+  gap: 20px;
+
+}
+
+.lista-itens li a{
+  font: 600 1rem/1.0 "Arial";
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+.header a{
+  padding: 10px 20px;
+  background-color: rgb(49, 86, 87);
+  border-radius: 5px;
+  color: aliceblue;
+  font: 400 0.950rem/1.0 "Arial";
+}
+
+.header .circulo{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 0, 157, 0.438);
+  border-radius: 50%;
+}
+
+.header .titulo{
+  font: 100 3.5rem/1.0 "Arial";
+}
+
+.header .circulo::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: aquamarine;
+  top: -10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+
+@media (max-width: 650px){
+  .header{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lista-itens li{
+    font: 600 rem/1.0 "Arial";
+    cursor: pointer;
+  }
+}
